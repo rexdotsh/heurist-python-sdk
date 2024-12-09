@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heurist-python-sdk"
+version = "0.1.0"
+description = "Unofficial python SDK for Heurist API"
+authors = [
+    { name = "rex", email = "mridul@rex.wf" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "aiohttp>=3.8.0",
+    "openai>=1.0.0",
+    "typing-extensions>=4.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.setuptools]
+packages = ["heurist_python_sdk"] 
