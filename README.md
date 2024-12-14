@@ -76,9 +76,7 @@ The SDK supports these environment variables:
 - `HEURIST_BASE_URL`: Base URL for API (optional, defaults to `http://sequencer.heurist.xyz`)
 - `HEURIST_WORKFLOW_URL`: Workflow service URL (optional)
 
-### Smart Generation Options
-
-Customize the image generation process:
+### Smart Generation
 
 ```python
 response = await client.smartgen.generate_image(
@@ -102,7 +100,10 @@ response = await client.smartgen.generate_image(
 
 ## Examples
 
-Find more examples in the `examples/` directory:
+Find more examples in the [`examples/`](examples/) directory:
+
+- [Basic Image Generation](examples/image_generation.py)
+- [Smart Image Generation](examples/smart_generation.py)
 
 ## Contributing
 
