@@ -14,8 +14,7 @@ def load_env():
     # Verify API key is present
     api_key = os.getenv("HEURIST_API_KEY")
     if not api_key or api_key == "your-api-key-here":
-        print("\nWarning: Please set your HEURIST_API_KEY in the .env file")
-        print("The current examples will not work without a valid API key\n")
+        raise ValueError("Please set your HEURIST_API_KEY in the .env file")
 
 
 def generate_random_hex(length: int) -> str:
